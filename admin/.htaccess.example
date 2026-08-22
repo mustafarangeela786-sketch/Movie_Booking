@@ -1,0 +1,27 @@
+# ==========================================================
+# OPTIONAL extra layer of protection for the /admin folder.
+#
+# This is currently named ".htaccess.example" so it does
+# NOTHING until you rename it. To turn it on:
+#   1. Rename this file to ".htaccess" (remove ".example"),
+#      keep it inside the admin/ folder.
+#   2. Make sure Apache's AllowOverride is set to "All" for
+#      your site (XAMPP's default httpd-xampp.conf already
+#      allows this for htdocs).
+#
+# What it does: on localhost, only requests coming from your
+# own computer (127.0.0.1 / ::1) are allowed to even reach
+# admin/*.php - anyone else gets a 403 Forbidden before the
+# login page loads at all. This is on top of the username/
+# password login, not instead of it.
+#
+# If you ever put this site on a real server on the internet,
+# replace 127.0.0.1 below with your own public IP address
+# (search "what is my ip" to find it), otherwise you will be
+# the one locked out.
+# ==========================================================
+
+<RequireAny>
+    Require ip 127.0.0.1
+    Require ip ::1
+</RequireAny>

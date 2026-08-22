@@ -1,0 +1,17 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Movie Booking System">
+  <defs>
+    <linearGradient id="mbsIconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4d57"/>
+      <stop offset="55%" stop-color="#e0141a"/>
+      <stop offset="100%" stop-color="#960b10"/>
+    </linearGradient>
+  </defs>
+
+  <!-- A movie ticket with a play mark, perforated like a cinema stub -->
+  <rect x="10" y="10" width="180" height="180" rx="30" fill="url(#mbsIconGrad)"/>
+  <rect x="10" y="10" width="180" height="180" rx="30" fill="none" stroke="#0f1116" stroke-opacity="0.25" stroke-width="4"/>
+  <line x1="44" y1="20" x2="44" y2="180" stroke="#ffffff" stroke-opacity="0.55" stroke-width="6" stroke-dasharray="3 13" stroke-linecap="round"/>
+  <circle cx="44" cy="10" r="13" fill="#171a21"/>
+  <circle cx="44" cy="190" r="13" fill="#171a21"/>
+  <path d="M88 58 L156 100 L88 142 Z" fill="#ffffff"/>
+</svg>

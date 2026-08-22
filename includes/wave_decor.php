@@ -1,0 +1,13 @@
+<?php
+/* ==========================================================
+   wave_decor.php - Shared animated wave divider, included at
+   the top and bottom of every page (and in the admin footer).
+
+   Inlined as real SVG (not <img>) so each of the 3 wave layers
+   can scroll independently in CSS - a continuous seamless
+   parallax loop, each layer drawn twice side by side and
+   translated exactly one tile-width to the left forever.
+   ========================================================== */
+?>
+<svg class="wave-svg" viewBox="0 0 1200 160" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true"> <defs> <linearGradient id="waveDeep" x1="0%" y1="0%" x2="0%" y2="100%"> <stop offset="0%" stop-color="#0d2f4f"/> <stop offset="100%" stop-color="#08203a"/> </linearGradient> <linearGradient id="waveMid" x1="0%" y1="0%" x2="0%" y2="100%"> <stop offset="0%" stop-color="#144a72"/> <stop offset="100%" stop-color="#0d2f4f"/> </linearGradient> <linearGradient id="waveTop" x1="0%" y1="0%" x2="0%" y2="100%"> <stop offset="0%" stop-color="#1d6a97"/> <stop offset="100%" stop-color="#144a72"/> </linearGradient> </defs> <g class="wave-layer wave-back"> <path fill="url(#waveDeep)" d="M0,90 C150,130 350,40 600,80 C850,120 1050,40 1200,80 L1200,160 L0,160 Z"/> <path fill="url(#waveDeep)" transform="translate(1200,0)" d="M0,90 C150,130 350,40 600,80 C850,120 1050,40 1200,80 L1200,160 L0,160 Z"/> </g> <g class="wave-layer wave-mid"> <path fill="url(#waveMid)" d="M0,100 C200,60 400,130 600,100 C800,70 1000,120 1200,90 L1200,160 L0,160 Z"/> <path fill="url(#waveMid)" transform="translate(1200,0)" d="M0,100 C200,60 400,130 600,100 C800,70 1000,120 1200,90 L1200,160 L0,160 Z"/> </g> <g class="wave-layer wave-front"> <path fill="url(#waveTop)" d="M0,120 C180,90 420,140 600,115 C820,85 1000,140 1200,110 L1200,160 L0,160 Z"/> <path fill="url(#waveTop)" transform="translate(1200,0)" d="M0,120 C180,90 420,140 600,115 C820,85 1000,140 1200,110 L1200,160 L0,160 Z"/> </g>
+</svg>
