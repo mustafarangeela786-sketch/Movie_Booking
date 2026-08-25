@@ -1,24 +1,11 @@
 <?php
-/* ==========================================================
-   Database Connection File
-   Uses MySQLi to connect PHP with the MySQL database.
-   Update the credentials below to match your local server
-   (e.g. XAMPP / WAMP default is user "root", empty password).
-   ========================================================== */
-
-$DB_HOST = "localhost";
-$DB_USER = "root";
-$DB_PASS = "";
-$DB_NAME = "movie booking";
-
-// Create connection
-$conn = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
-
-// Check connection and stop execution if it fails
+$DB_HOST = "sql208.infinityfree.com";
+$DB_USER = "if0_42722773";
+$DB_PASS = "iF8nXwmOEN4Fb";
+$DB_NAME = "if0_42722773_movie_booking";
+$conn = new mysqli("sql208.infinityfree.com", "if0_42722773", "iF8nXwmOEN4Fb", "if0_42722773_movie_booking");
 if ($conn->connect_error) {
     die("Database Connection Failed: " . $conn->connect_error);
 }
-
-// Force UTF-8 so titles/descriptions display correctly
 $conn->set_charset("utf8mb4");
 ?>
