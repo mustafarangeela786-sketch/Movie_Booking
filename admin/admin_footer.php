@@ -6,3 +6,5 @@
 <script src="../assets/js/main.js?v=<?php echo file_exists(__DIR__.'/../assets/js/main.js') ? filemtime(__DIR__.'/../assets/js/main.js') : time(); ?>"></script>
 </body>
 </html>
+
+f
